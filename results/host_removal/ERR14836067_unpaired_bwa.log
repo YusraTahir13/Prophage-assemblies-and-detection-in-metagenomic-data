@@ -1,0 +1,6 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 70145 sequences (8775719 bp)...
+[M::mem_process_seqs] Processed 70145 reads in 26.667 CPU sec, 13.341 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 2 /mnt/d/Metagenomics/D02_T2_pilot/references/hg38/hg38.fa /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz
+[main] Real time: 66.684 sec; CPU: 32.813 sec

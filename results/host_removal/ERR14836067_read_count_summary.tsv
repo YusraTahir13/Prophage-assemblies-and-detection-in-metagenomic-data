@@ -1,0 +1,14 @@
+metric	read_records	percent_of_input
+input_R1	17232868	49.8984%
+input_R2	17232868	49.8984%
+input_unpaired	70145	0.2031%
+total_input_read_records	34535881	100.0000%
+mapped_paired_primary_records	0	0.0000%
+mapped_unpaired_primary_records	0	0.0000%
+total_mapped_primary_records	0	0.0000%
+retained_paired_R1_records	17232868	49.8984%
+retained_paired_R2_records	17232868	49.8984%
+retained_paired_singletons	0	0.0000%
+retained_originally_unpaired_records	70145	0.2031%
+total_retained_orphan_records	70145	0.2031%
+total_retained_read_records	34535881	100.0000%
