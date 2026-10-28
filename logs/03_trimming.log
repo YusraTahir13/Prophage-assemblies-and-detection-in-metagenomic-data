@@ -1,0 +1,644 @@
+Started: Tue Oct 20 13:51:57 CEST 2026
+Project: /mnt/d/Metagenomics/D02_T2_pilot
+Input R1: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+Input R2: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
+Quality threshold: Q30
+Paired minimum length: 60 bp
+Unpaired minimum length: 35 bp
+Threads: 2
+
+Trim Galore version:
+
+                        Quality-/Adapter-/RRBS-/Speciality-Trimming
+                                [powered by Cutadapt]
+                                  version 0.6.7
+
+                               Last update: 11 05 2020
+
+Cutadapt version:
+5.2
+FastQC version:
+FastQC v0.12.1
+pigz version:
+pigz 2.8
+
+Running Trim Galore...
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 5.2
+Could not detect version of Python used by Cutadapt from the first line of Cutadapt (but found this: >>>#!/bin/sh<<<)
+Letting the (modified) Cutadapt deal with the Python version instead
+pigz 2.8
+Parallel gzip (pigz) detected. Proceeding with multicore (de)compression using 2 cores
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+The single-end unpaired read length needs to be longer than the paired-end cut-off value (60 bp)
+
+Started: Tue Oct 20 14:22:18 CEST 2026
+Project: /mnt/d/Metagenomics/D02_T2_pilot
+Input R1: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+Input R2: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
+Quality threshold: Q30
+Paired minimum length: 60 bp
+Threads: 2
+
+Trim Galore version:
+
+                        Quality-/Adapter-/RRBS-/Speciality-Trimming
+                                [powered by Cutadapt]
+                                  version 0.6.7
+
+                               Last update: 11 05 2020
+
+Cutadapt version:
+5.2
+FastQC version:
+FastQC v0.12.1
+pigz version:
+pigz 2.8
+
+Running Trim Galore...
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 5.2
+Could not detect version of Python used by Cutadapt from the first line of Cutadapt (but found this: >>>#!/bin/sh<<<)
+Letting the (modified) Cutadapt deal with the Python version instead
+pigz 2.8
+Parallel gzip (pigz) detected. Proceeding with multicore (de)compression using 2 cores
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/trimmed/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	15	CTGTCTCTTATA	1000000	0.00
+smallRNA	6	TGGAATTCTCGG	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using Nextera adapter for trimming (count: 15). Second best hit was smallRNA (count: 6)
+
+Writing report to '/mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/trimmed/ERR14836067_dedup_R1.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 5.2
+Python version: could not detect
+Number of cores used for trimming: 2
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 60 bp
+Length cut-off for read 1: 35 bp (default)
+Length cut-off for read 2: 35 bb (default)
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 5.2). Setting -j 2
+Writing final adapter and quality trimmed output to ERR14836067_dedup_R1_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz <<< 
+10000000 sequences processed
+This is cutadapt 5.2 with Python 3.12.3
+Command line parameters: -j 2 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+Processing single-end reads on 2 cores ...
+
+=== Summary ===
+
+Total reads processed:              17,288,597
+Reads with adapters:                 7,227,725 (41.8%)
+Reads written (passing filters):    17,288,597 (100.0%)
+
+Total basepairs processed: 2,577,154,294 bp
+Quality-trimmed:               3,643,873 bp (0.1%)
+Total written (filtered):  2,562,823,426 bp (99.4%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 7227725 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 22.6%
+  C: 22.2%
+  G: 27.0%
+  T: 28.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5538744	4322149.2	0	5538744
+2	1108722	1080537.3	0	1108722
+3	427915	270134.3	0	427915
+4	104383	67533.6	0	104383
+5	26968	16883.4	0	26968
+6	5470	4220.8	0	5470
+7	1333	1055.2	0	1333
+8	312	263.8	0	312
+9	242	66.0	0	99 143
+10	453	16.5	1	3 450
+11	276	4.1	1	6 270
+12	86	1.0	1	0 86
+13	90	1.0	1	2 88
+14	91	1.0	1	1 90
+15	89	1.0	1	0 89
+16	92	1.0	1	2 90
+17	100	1.0	1	1 99
+18	98	1.0	1	2 96
+19	91	1.0	1	0 91
+20	82	1.0	1	2 80
+21	104	1.0	1	1 103
+22	80	1.0	1	3 77
+23	70	1.0	1	1 69
+24	83	1.0	1	2 81
+25	99	1.0	1	2 97
+26	91	1.0	1	0 91
+27	109	1.0	1	1 108
+28	107	1.0	1	1 106
+29	101	1.0	1	1 100
+30	121	1.0	1	3 118
+31	90	1.0	1	0 90
+32	76	1.0	1	0 76
+33	86	1.0	1	2 84
+34	98	1.0	1	1 97
+35	87	1.0	1	0 87
+36	110	1.0	1	3 107
+37	82	1.0	1	0 82
+38	84	1.0	1	2 82
+39	87	1.0	1	1 86
+40	82	1.0	1	2 80
+41	69	1.0	1	0 69
+42	89	1.0	1	1 88
+43	102	1.0	1	2 100
+44	86	1.0	1	0 86
+45	97	1.0	1	1 96
+46	93	1.0	1	5 88
+47	110	1.0	1	1 109
+48	86	1.0	1	0 86
+49	102	1.0	1	2 100
+50	106	1.0	1	3 103
+51	97	1.0	1	0 97
+52	92	1.0	1	0 92
+53	114	1.0	1	7 107
+54	88	1.0	1	3 85
+55	96	1.0	1	1 95
+56	109	1.0	1	0 109
+57	105	1.0	1	0 105
+58	95	1.0	1	1 94
+59	108	1.0	1	2 106
+60	118	1.0	1	1 117
+61	74	1.0	1	5 69
+62	105	1.0	1	1 104
+63	90	1.0	1	1 89
+64	99	1.0	1	3 96
+65	96	1.0	1	4 92
+66	82	1.0	1	1 81
+67	95	1.0	1	2 93
+68	85	1.0	1	0 85
+69	98	1.0	1	0 98
+70	98	1.0	1	0 98
+71	87	1.0	1	3 84
+72	99	1.0	1	1 98
+73	96	1.0	1	1 95
+74	85	1.0	1	2 83
+75	90	1.0	1	4 86
+76	84	1.0	1	3 81
+77	89	1.0	1	4 85
+78	88	1.0	1	2 86
+79	93	1.0	1	3 90
+80	104	1.0	1	4 100
+81	79	1.0	1	0 79
+82	95	1.0	1	2 93
+83	94	1.0	1	1 93
+84	107	1.0	1	3 104
+85	89	1.0	1	0 89
+86	92	1.0	1	1 91
+87	84	1.0	1	1 83
+88	107	1.0	1	1 106
+89	94	1.0	1	2 92
+90	85	1.0	1	0 85
+91	108	1.0	1	1 107
+92	86	1.0	1	2 84
+93	101	1.0	1	2 99
+94	102	1.0	1	2 100
+95	86	1.0	1	1 85
+96	101	1.0	1	0 101
+97	75	1.0	1	0 75
+98	116	1.0	1	1 115
+99	99	1.0	1	3 96
+100	82	1.0	1	3 79
+101	92	1.0	1	2 90
+102	95	1.0	1	0 95
+103	104	1.0	1	4 100
+104	75	1.0	1	1 74
+105	89	1.0	1	1 88
+106	93	1.0	1	1 92
+107	98	1.0	1	1 97
+108	85	1.0	1	2 83
+109	92	1.0	1	5 87
+110	83	1.0	1	1 82
+111	87	1.0	1	1 86
+112	83	1.0	1	1 82
+113	86	1.0	1	1 85
+114	91	1.0	1	0 91
+115	125	1.0	1	0 125
+116	79	1.0	1	0 79
+117	87	1.0	1	1 86
+118	87	1.0	1	0 87
+119	96	1.0	1	0 96
+120	93	1.0	1	2 91
+121	91	1.0	1	2 89
+122	95	1.0	1	0 95
+123	100	1.0	1	2 98
+124	84	1.0	1	1 83
+125	106	1.0	1	0 106
+126	101	1.0	1	1 100
+127	85	1.0	1	2 83
+128	99	1.0	1	1 98
+129	74	1.0	1	0 74
+130	109	1.0	1	1 108
+131	92	1.0	1	1 91
+132	102	1.0	1	2 100
+133	101	1.0	1	2 99
+134	98	1.0	1	2 96
+135	81	1.0	1	2 79
+136	99	1.0	1	1 98
+137	87	1.0	1	3 84
+138	90	1.0	1	1 89
+139	78	1.0	1	2 76
+140	80	1.0	1	5 75
+141	114	1.0	1	1 113
+142	103	1.0	1	0 103
+143	95	1.0	1	2 93
+144	103	1.0	1	2 101
+145	97	1.0	1	1 96
+146	97	1.0	1	1 96
+147	93	1.0	1	3 90
+148	78	1.0	1	1 77
+149	57	1.0	1	2 55
+150	51	1.0	1	1 50
+
+RUN STATISTICS FOR INPUT FILE: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+=============================================
+17288597 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/trimmed/ERR14836067_dedup_R2.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 5.2
+Python version: could not detect
+Number of cores used for trimming: 2
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 60 bp
+Length cut-off for read 1: 35 bp (default)
+Length cut-off for read 2: 35 bb (default)
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 5.2). Setting -j -j 2
+Writing final adapter and quality trimmed output to ERR14836067_dedup_R2_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz <<< 
+10000000 sequences processed
+This is cutadapt 5.2 with Python 3.12.3
+Command line parameters: -j 2 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
+Processing single-end reads on 2 cores ...
+
+=== Summary ===
+
+Total reads processed:              17,288,597
+Reads with adapters:                 7,181,180 (41.5%)
+Reads written (passing filters):    17,288,597 (100.0%)
+
+Total basepairs processed: 2,576,992,935 bp
+Quality-trimmed:               5,745,163 bp (0.2%)
+Total written (filtered):  2,560,566,456 bp (99.4%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 7181180 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 22.9%
+  C: 21.9%
+  G: 26.8%
+  T: 28.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5458071	4322149.2	0	5458071
+2	1135339	1080537.3	0	1135339
+3	433766	270134.3	0	433766
+4	105524	67533.6	0	105524
+5	27325	16883.4	0	27325
+6	5664	4220.8	0	5664
+7	1377	1055.2	0	1377
+8	346	263.8	0	346
+9	254	66.0	0	120 134
+10	452	16.5	1	4 448
+11	294	4.1	1	9 285
+12	107	1.0	1	0 107
+13	75	1.0	1	0 75
+14	93	1.0	1	0 93
+15	90	1.0	1	1 89
+16	88	1.0	1	1 87
+17	105	1.0	1	4 101
+18	83	1.0	1	0 83
+19	87	1.0	1	4 83
+20	91	1.0	1	2 89
+21	85	1.0	1	0 85
+22	102	1.0	1	1 101
+23	79	1.0	1	1 78
+24	81	1.0	1	1 80
+25	91	1.0	1	0 91
+26	87	1.0	1	1 86
+27	115	1.0	1	1 114
+28	77	1.0	1	0 77
+29	92	1.0	1	1 91
+30	80	1.0	1	0 80
+31	94	1.0	1	2 92
+32	103	1.0	1	2 101
+33	62	1.0	1	0 62
+34	92	1.0	1	1 91
+35	97	1.0	1	1 96
+36	81	1.0	1	0 81
+37	80	1.0	1	1 79
+38	97	1.0	1	2 95
+39	94	1.0	1	2 92
+40	94	1.0	1	3 91
+41	87	1.0	1	2 85
+42	88	1.0	1	1 87
+43	100	1.0	1	1 99
+44	98	1.0	1	1 97
+45	71	1.0	1	1 70
+46	81	1.0	1	0 81
+47	85	1.0	1	2 83
+48	98	1.0	1	1 97
+49	90	1.0	1	1 89
+50	85	1.0	1	1 84
+51	93	1.0	1	2 91
+52	108	1.0	1	1 107
+53	105	1.0	1	1 104
+54	76	1.0	1	0 76
+55	109	1.0	1	2 107
+56	83	1.0	1	2 81
+57	99	1.0	1	3 96
+58	97	1.0	1	2 95
+59	86	1.0	1	1 85
+60	107	1.0	1	1 106
+61	97	1.0	1	3 94
+62	106	1.0	1	2 104
+63	93	1.0	1	2 91
+64	92	1.0	1	3 89
+65	104	1.0	1	2 102
+66	81	1.0	1	0 81
+67	82	1.0	1	1 81
+68	97	1.0	1	4 93
+69	92	1.0	1	2 90
+70	97	1.0	1	3 94
+71	80	1.0	1	1 79
+72	107	1.0	1	1 106
+73	94	1.0	1	1 93
+74	92	1.0	1	0 92
+75	102	1.0	1	4 98
+76	111	1.0	1	5 106
+77	72	1.0	1	0 72
+78	94	1.0	1	4 90
+79	94	1.0	1	1 93
+80	93	1.0	1	1 92
+81	93	1.0	1	0 93
+82	101	1.0	1	2 99
+83	94	1.0	1	1 93
+84	107	1.0	1	2 105
+85	100	1.0	1	2 98
+86	91	1.0	1	2 89
+87	79	1.0	1	1 78
+88	105	1.0	1	2 103
+89	88	1.0	1	0 88
+90	79	1.0	1	1 78
+91	103	1.0	1	0 103
+92	80	1.0	1	0 80
+93	98	1.0	1	1 97
+94	86	1.0	1	0 86
+95	82	1.0	1	0 82
+96	79	1.0	1	1 78
+97	85	1.0	1	1 84
+98	92	1.0	1	0 92
+99	91	1.0	1	3 88
+100	75	1.0	1	3 72
+101	96	1.0	1	0 96
+102	96	1.0	1	3 93
+103	99	1.0	1	1 98
+104	113	1.0	1	0 113
+105	85	1.0	1	0 85
+106	84	1.0	1	2 82
+107	108	1.0	1	1 107
+108	87	1.0	1	1 86
+109	79	1.0	1	1 78
+110	93	1.0	1	0 93
+111	97	1.0	1	2 95
+112	100	1.0	1	0 100
+113	95	1.0	1	0 95
+114	90	1.0	1	1 89
+115	102	1.0	1	1 101
+116	79	1.0	1	2 77
+117	88	1.0	1	2 86
+118	101	1.0	1	1 100
+119	92	1.0	1	0 92
+120	77	1.0	1	2 75
+121	82	1.0	1	0 82
+122	111	1.0	1	0 111
+123	103	1.0	1	1 102
+124	76	1.0	1	2 74
+125	76	1.0	1	0 76
+126	88	1.0	1	1 87
+127	115	1.0	1	2 113
+128	115	1.0	1	0 115
+129	87	1.0	1	1 86
+130	106	1.0	1	1 105
+131	97	1.0	1	1 96
+132	104	1.0	1	0 104
+133	85	1.0	1	2 83
+134	75	1.0	1	2 73
+135	122	1.0	1	2 120
+136	98	1.0	1	0 98
+137	90	1.0	1	0 90
+138	90	1.0	1	2 88
+139	98	1.0	1	3 95
+140	106	1.0	1	0 106
+141	85	1.0	1	1 84
+142	97	1.0	1	0 97
+143	90	1.0	1	0 90
+144	110	1.0	1	4 106
+145	88	1.0	1	1 87
+146	82	1.0	1	5 77
+147	103	1.0	1	0 103
+148	68	1.0	1	0 68
+149	75	1.0	1	1 74
+150	49	1.0	1	1 48
+
+RUN STATISTICS FOR INPUT FILE: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
+=============================================
+17288597 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files ERR14836067_dedup_R1_trimmed.fq.gz and ERR14836067_dedup_R2_trimmed.fq.gz
+file_1: ERR14836067_dedup_R1_trimmed.fq.gz, file_2: ERR14836067_dedup_R2_trimmed.fq.gz
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: ERR14836067_dedup_R1_trimmed.fq.gz and ERR14836067_dedup_R2_trimmed.fq.gz <<<<<
+Writing validated paired-end Read 1 reads to ERR14836067_dedup_R1_val_1.fq.gz
+Writing validated paired-end Read 2 reads to ERR14836067_dedup_R2_val_2.fq.gz
+
+Writing unpaired read 1 reads to ERR14836067_dedup_R1_unpaired_1.fq.gz
+Writing unpaired read 2 reads to ERR14836067_dedup_R2_unpaired_2.fq.gz
+
+Total number of sequences analysed: 17288597
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (60 bp): 55729 (0.32%)
+
+Deleting both intermediate output files ERR14836067_dedup_R1_trimmed.fq.gz and ERR14836067_dedup_R2_trimmed.fq.gz
+
+====================================================================================================
+
+
+Running FastQC on trimmed reads...
+application/gzip
+Started analysis of ERR14836067_dedup_R1_val_1.fq.gz
+application/gzip
+application/gzip
+application/gzip
+Started analysis of ERR14836067_dedup_R2_val_2.fq.gz
+Approx 5% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 5% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 10% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 10% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 15% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 15% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 20% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 20% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 25% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 25% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 30% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 30% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 35% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 35% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 40% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 40% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 45% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 45% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 50% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 50% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 55% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 55% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 60% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 60% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 65% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 65% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 70% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 70% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 75% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 75% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 80% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 80% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 85% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 85% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 90% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 90% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Approx 95% complete for ERR14836067_dedup_R1_val_1.fq.gz
+Approx 95% complete for ERR14836067_dedup_R2_val_2.fq.gz
+Analysis complete for ERR14836067_dedup_R1_val_1.fq.gz
+Started analysis of ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 5% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 10% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 15% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 20% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 25% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 30% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 35% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 40% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 45% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 50% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 55% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 60% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 65% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 70% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 75% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 80% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 85% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 90% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Approx 95% complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Analysis complete for ERR14836067_dedup_R1_unpaired_1.fq.gz
+Started analysis of ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 5% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 10% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 15% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 20% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 25% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 30% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 35% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 40% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 45% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 50% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 55% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 60% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 65% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 70% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 75% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 80% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 85% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 90% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Approx 95% complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Analysis complete for ERR14836067_dedup_R2_unpaired_2.fq.gz
+Analysis complete for ERR14836067_dedup_R2_val_2.fq.gz
+
+Trimming finished successfully.
+
+Trimmed output files:
+total 2.5G
+-rwxrwxrwx 1 yusra yusra 4.6K Oct 20 14:31 ERR14836067_dedup_R1.fastq.gz_trimming_report.txt
+-rwxrwxrwx 1 yusra yusra 3.4M Oct 20 14:52 ERR14836067_dedup_R1_unpaired_1.fq.gz
+-rwxrwxrwx 1 yusra yusra 1.2G Oct 20 14:52 ERR14836067_dedup_R1_val_1.fq.gz
+-rwxrwxrwx 1 yusra yusra 4.8K Oct 20 14:52 ERR14836067_dedup_R2.fastq.gz_trimming_report.txt
+-rwxrwxrwx 1 yusra yusra 2.3M Oct 20 14:52 ERR14836067_dedup_R2_unpaired_2.fq.gz
+-rwxrwxrwx 1 yusra yusra 1.3G Oct 20 14:52 ERR14836067_dedup_R2_val_2.fq.gz
+
+FastQC report files:
+total 5.9M
+-rwxrwxrwx 1 yusra yusra 636K Oct 20 15:06 ERR14836067_dedup_R1_unpaired_1_fastqc.html
+-rwxrwxrwx 1 yusra yusra 866K Oct 20 15:06 ERR14836067_dedup_R1_unpaired_1_fastqc.zip
+-rwxrwxrwx 1 yusra yusra 623K Oct 20 15:06 ERR14836067_dedup_R1_val_1_fastqc.html
+-rwxrwxrwx 1 yusra yusra 879K Oct 20 15:06 ERR14836067_dedup_R1_val_1_fastqc.zip
+-rwxrwxrwx 1 yusra yusra 627K Oct 20 15:06 ERR14836067_dedup_R2_unpaired_2_fastqc.html
+-rwxrwxrwx 1 yusra yusra 834K Oct 20 15:06 ERR14836067_dedup_R2_unpaired_2_fastqc.zip
+-rwxrwxrwx 1 yusra yusra 632K Oct 20 15:06 ERR14836067_dedup_R2_val_2_fastqc.html
+-rwxrwxrwx 1 yusra yusra 887K Oct 20 15:06 ERR14836067_dedup_R2_val_2_fastqc.zip
+
+Finished: Tue Oct 20 15:06:42 CEST 2026

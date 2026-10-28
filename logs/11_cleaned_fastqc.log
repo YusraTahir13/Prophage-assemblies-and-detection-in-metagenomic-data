@@ -1,0 +1,137 @@
+]3008;end=99fe0b37-54fe-4771-968d-5801a5465e5a;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ 
+[?2004l]3008;end=b26fa73c-0966-4e03-9aeb-cdfea1aaff1b;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ echo "=== FastQC on cleaned reads ==="
+[?2004l]3008;start=caf83bf2-4700-4344-9b3b-1fe4a2318e61;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\=== FastQC on cleaned reads ===
+]3008;end=caf83bf2-4700-4344-9b3b-1fe4a2318e61;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ date
+[?2004l]3008;start=ae1520d3-61d1-41da-8ade-79fd0907fd71;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\Mon Oct 26 13:55:21 CET 2026
+]3008;end=ae1520d3-61d1-41da-8ade-79fd0907fd71;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ fastqc --version
+[?2004l]3008;start=e572eedf-d4dd-457c-b2e5-fc76af04388b;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\FastQC v0.12.1
+]3008;end=e572eedf-d4dd-457c-b2e5-fc76af04388b;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ 
+[?2004l]3008;end=280b4288-3b72-4fea-8bd1-1ad14163c054;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ INPUTS=(
+[?2004l[?2004h>     "$INPUT_DIR/${SAMPLE}_cleaned_1.fastq.gz"
+[?2004l[?2004h>     "$INPUT_DIR/${SAMPLE}_cleaned_2.fastq.gz"
+[?2004l[?2004h>     "$INPUT_DIR/${SAMPLE}_cleaned_orphans.fastq.gz"
+[?2004l[?2004h> )
+[?2004l]3008;start=c8568e09-2713-4f61-8ca7-5255528c655c;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\]3008;end=c8568e09-2713-4f61-8ca7-5255528c655c;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ 
+[?2004l]3008;end=5356062b-2214-4db9-8907-0ffc12cd3db6;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ for f in "${INPUTS[@]}"; do
+[?2004l[?2004h>     if [[ ! -s "$f" ]]; then
+[?2004l[?2004h>         echo "ERROR: Input file missing or empty: $f"
+[?2004l[?2004h>         exit 1
+[?2004l[?2004h>     fi
+[?2004l[?2004h> done
+[?2004l]3008;start=89917331-8768-4eb8-b160-2ebf7a77b37a;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\]3008;end=89917331-8768-4eb8-b160-2ebf7a77b37a;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ 
+[?2004l]3008;end=af663583-ab68-4d4c-a77c-9eec19fa3783;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ fastqc "${INPUTS[@]}" --outdir "$OUTDIR" --threads 2
+[?2004l]3008;start=44ab6493-2470-4c36-8897-5a285ecb27c1;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\application/gzip
+Started analysis of ERR14836067_cleaned_1.fastq.gz
+application/gzip
+application/gzip
+Started analysis of ERR14836067_cleaned_2.fastq.gz
+Approx 5% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 5% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 10% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 10% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 15% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 15% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 20% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 20% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 25% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 25% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 30% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 30% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 35% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 35% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 40% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 40% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 45% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 45% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 50% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 50% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 55% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 55% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 60% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 60% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 65% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 65% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 70% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 70% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 75% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 75% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 80% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 80% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 85% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 85% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 90% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 90% complete for ERR14836067_cleaned_2.fastq.gz
+Approx 95% complete for ERR14836067_cleaned_1.fastq.gz
+Approx 95% complete for ERR14836067_cleaned_2.fastq.gz
+Analysis complete for ERR14836067_cleaned_1.fastq.gz
+Started analysis of ERR14836067_cleaned_orphans.fastq.gz
+Approx 5% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 10% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 15% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 20% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 25% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 30% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 35% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 40% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 45% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 50% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 55% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 60% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 65% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 70% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 75% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 80% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 85% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 90% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 95% complete for ERR14836067_cleaned_orphans.fastq.gz
+Analysis complete for ERR14836067_cleaned_orphans.fastq.gz
+Analysis complete for ERR14836067_cleaned_2.fastq.gz
+]3008;end=44ab6493-2470-4c36-8897-5a285ecb27c1;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ 
+[?2004l]3008;end=8f1f7e49-08d4-4797-a01a-ca52b2406669;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ echo "=== FastQC completed ==="
+[?2004l]3008;start=5bb42ba1-57d5-4d8e-9db7-fa1695fdcf16;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\=== FastQC completed ===
+]3008;end=5bb42ba1-57d5-4d8e-9db7-fa1695fdcf16;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ echo "Reports saved in: $OUTDIR"
+[?2004l]3008;start=4e7276b9-9176-4fca-95a9-bcaaf75db2fe;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\Reports saved in: /mnt/d/Metagenomics/D02_T2_pilot/qc/cleaned_fastqc
+]3008;end=4e7276b9-9176-4fca-95a9-bcaaf75db2fe;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ date
+[?2004l]3008;start=cd91fc46-660c-48f9-a3f7-48c3074c0351;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\Mon Oct 26 14:12:41 CET 2026
+]3008;end=cd91fc46-660c-48f9-a3f7-48c3074c0351;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ ls -lh qc/cleaned_fastqc/
+[?2004l]3008;start=b0941bfc-a97d-4188-87c4-47a0ab3289da;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\total 2.7M
+-rwxrwxrwx 1 yusra yusra 595K Oct 26 14:12 ERR14836067_cleaned_1_fastqc.html
+-rwxrwxrwx 1 yusra yusra 315K Oct 26 14:12 ERR14836067_cleaned_1_fastqc.zip
+-rwxrwxrwx 1 yusra yusra 601K Oct 26 14:12 ERR14836067_cleaned_2_fastqc.html
+-rwxrwxrwx 1 yusra yusra 319K Oct 26 14:12 ERR14836067_cleaned_2_fastqc.zip
+-rwxrwxrwx 1 yusra yusra 580K Oct 26 14:12 ERR14836067_cleaned_orphans_fastqc.html
+-rwxrwxrwx 1 yusra yusra 334K Oct 26 14:12 ERR14836067_cleaned_orphans_fastqc.zip
+]3008;end=b0941bfc-a97d-4188-87c4-47a0ab3289da;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ ls -lh logs/11_cleaned_fastqc.log
+[?2004l]3008;start=54e0fa6a-a547-4888-9e93-6d98ba3e58ed;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\-rwxrwxrwx 1 yusra yusra 16K Oct 26 14:17 logs/11_cleaned_fastqc.log
+]3008;end=54e0fa6a-a547-4888-9e93-6d98ba3e58ed;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ tail -n 30 logs/11_cleaned_fastqc.log
+[?2004l]3008;start=02fe4a3e-dbf6-4dcc-987e-6ee75498e358;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\Approx 55% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 60% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 65% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 70% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 75% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 80% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 85% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 90% complete for ERR14836067_cleaned_orphans.fastq.gz
+Approx 95% complete for ERR14836067_cleaned_orphans.fastq.gz
+Analysis complete for ERR14836067_cleaned_orphans.fastq.gz
+Analysis complete for ERR14836067_cleaned_2.fastq.gz
+]3008;end=44ab6493-2470-4c36-8897-5a285ecb27c1;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ 
+[?2004l]3008;end=8f1f7e49-08d4-4797-a01a-ca52b2406669;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ echo "=== FastQC completed ==="
+[?2004l]3008;start=5bb42ba1-57d5-4d8e-9db7-fa1695fdcf16;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\=== FastQC completed ===
+]3008;end=5bb42ba1-57d5-4d8e-9db7-fa1695fdcf16;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ echo "Reports saved in: $OUTDIR"
+[?2004l]3008;start=4e7276b9-9176-4fca-95a9-bcaaf75db2fe;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\Reports saved in: /mnt/d/Metagenomics/D02_T2_pilot/qc/cleaned_fastqc
+]3008;end=4e7276b9-9176-4fca-95a9-bcaaf75db2fe;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ date
+[?2004l]3008;start=cd91fc46-660c-48f9-a3f7-48c3074c0351;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\Mon Oct 26 14:12:41 CET 2026
+]3008;end=cd91fc46-660c-48f9-a3f7-48c3074c0351;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ ls -lh qc/cleaned_fastqc/
+[?2004l]3008;start=b0941bfc-a97d-4188-87c4-47a0ab3289da;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\total 2.7M
+-rwxrwxrwx 1 yusra yusra 595K Oct 26 14:12 ERR14836067_cleaned_1_fastqc.html
+-rwxrwxrwx 1 yusra yusra 315K Oct 26 14:12 ERR14836067_cleaned_1_fastqc.zip
+-rwxrwxrwx 1 yusra yusra 601K Oct 26 14:12 ERR14836067_cleaned_2_fastqc.html
+-rwxrwxrwx 1 yusra yusra 319K Oct 26 14:12 ERR14836067_cleaned_2_fastqc.zip
+-rwxrwxrwx 1 yusra yusra 580K Oct 26 14:12 ERR14836067_cleaned_orphans_fastqc.html
+-rwxrwxrwx 1 yusra yusra 334K Oct 26 14:12 ERR14836067_cleaned_orphans_fastqc.zip
+]3008;end=b0941bfc-a97d-4188-87c4-47a0ab3289da;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ ls -lh logs/11_cleaned_fastqc.log
+[?2004l]3008;start=54e0fa6a-a547-4888-9e93-6d98ba3e58ed;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\-rwxrwxrwx 1 yusra yusra 16K Oct 26 14:17 logs/11_cleaned_fastqc.log
+]3008;end=54e0fa6a-a547-4888-9e93-6d98ba3e58ed;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ tail -n 30 logs/11_cleaned_fastqc.log
+[?2004l]3008;start=02fe4a3e-dbf6-4dcc-987e-6ee75498e358;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\]3008;end=02fe4a3e-dbf6-4dcc-987e-6ee75498e358;exit=success\]3008;start=3306a750-0b10-425d-8d60-a93773b5582d;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=shell;cwd=/mnt/d/Metagenomics/D02_T2_pilot\[?2004h(preprocess) ]0;yusra@DESKTOP-KM27NJP: /mnt/d/Metagenomics/D02_T2_pilot[01;32myusra@DESKTOP-KM27NJP[00m:[01;34m/mnt/d/Metagenomics/D02_T2_pilot[00m$ ls -lh scripts/11_cleaned_fastqc.sh
+[?2004l]3008;start=2001ee68-1d24-42d2-b85d-2a920417d9a3;machineid=626b4f630f9e49c28816d08acae3919c;user=yusra;hostname=DESKTOP-KM27NJP;bootid=229ac40e-7b9b-4612-8f46-9b4966857ff5;pid=00000000000000000383;type=command;cwd=/mnt/d/Metagenomics/D02_T2_pilot\ls: cannot access 'scripts/11_cleaned_fastqc.sh': No such file or directory

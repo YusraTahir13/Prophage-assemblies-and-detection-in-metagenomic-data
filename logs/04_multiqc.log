@@ -1,0 +1,9 @@
+
+/// MultiQC 🔍 v1.35
+
+       file_search | Search path: /mnt/d/Metagenomics/D02_T2_pilot/qc/raw_fastqc
+       file_search | Search path: /mnt/d/Metagenomics/D02_T2_pilot/qc/trimmed_fastqc
+            fastqc | Found 6 reports
+     write_results | Data        : qc/multiqc_report/multiqc_data
+     write_results | Report      : qc/multiqc_report/multiqc_report.html
+           multiqc | MultiQC complete

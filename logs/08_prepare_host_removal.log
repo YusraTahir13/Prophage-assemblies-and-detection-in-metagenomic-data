@@ -1,0 +1,8 @@
+=== Preparing unpaired reads ===
+PASS: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/trimmed/ERR14836067_dedup_R1_unpaired_1.fq.gz
+PASS: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/trimmed/ERR14836067_dedup_R2_unpaired_2.fq.gz
+Unpaired R1: 41567 reads
+Unpaired R2: 28578 reads
+Combined:    70145 reads
+SUCCESS: Combined file verified.
+Output: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz

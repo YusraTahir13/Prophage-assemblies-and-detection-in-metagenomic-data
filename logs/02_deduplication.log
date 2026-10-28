@@ -1,0 +1,11 @@
+Started: Mon Oct 19 15:02:33 CEST 2026
+SuperDeduper version:
+v1.3.3
+Running paired-end deduplication...
+Deduplication finished.
+Output files:
+total 2.5G
+-rwxrwxrwx 1 yusra yusra 1.2G Oct 19 15:20 ERR14836067_dedup_R1.fastq.gz
+-rwxrwxrwx 1 yusra yusra 1.3G Oct 19 15:20 ERR14836067_dedup_R2.fastq.gz
+-rwxrwxrwx 1 yusra yusra 1.5K Oct 19 15:20 stats.log
+Finished: Mon Oct 19 15:20:50 CEST 2026
