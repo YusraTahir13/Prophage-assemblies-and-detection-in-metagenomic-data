@@ -1,0 +1,207 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 5.2
+Python version: could not detect
+Number of cores used for trimming: 2
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Using Nextera adapter for trimming (count: 15). Second best hit was smallRNA (count: 6)
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 60 bp
+Length cut-off for read 1: 35 bp (default)
+Length cut-off for read 2: 35 bp (default)
+Output file will be GZIP compressed
+
+
+This is cutadapt 5.2 with Python 3.12.3
+Command line parameters: -j 2 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+Processing single-end reads on 2 cores ...
+
+=== Summary ===
+
+Total reads processed:              17,288,597
+Reads with adapters:                 7,227,725 (41.8%)
+Reads written (passing filters):    17,288,597 (100.0%)
+
+Total basepairs processed: 2,577,154,294 bp
+Quality-trimmed:               3,643,873 bp (0.1%)
+Total written (filtered):  2,562,823,426 bp (99.4%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 7227725 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 22.6%
+  C: 22.2%
+  G: 27.0%
+  T: 28.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5538744	4322149.2	0	5538744
+2	1108722	1080537.3	0	1108722
+3	427915	270134.3	0	427915
+4	104383	67533.6	0	104383
+5	26968	16883.4	0	26968
+6	5470	4220.8	0	5470
+7	1333	1055.2	0	1333
+8	312	263.8	0	312
+9	242	66.0	0	99 143
+10	453	16.5	1	3 450
+11	276	4.1	1	6 270
+12	86	1.0	1	0 86
+13	90	1.0	1	2 88
+14	91	1.0	1	1 90
+15	89	1.0	1	0 89
+16	92	1.0	1	2 90
+17	100	1.0	1	1 99
+18	98	1.0	1	2 96
+19	91	1.0	1	0 91
+20	82	1.0	1	2 80
+21	104	1.0	1	1 103
+22	80	1.0	1	3 77
+23	70	1.0	1	1 69
+24	83	1.0	1	2 81
+25	99	1.0	1	2 97
+26	91	1.0	1	0 91
+27	109	1.0	1	1 108
+28	107	1.0	1	1 106
+29	101	1.0	1	1 100
+30	121	1.0	1	3 118
+31	90	1.0	1	0 90
+32	76	1.0	1	0 76
+33	86	1.0	1	2 84
+34	98	1.0	1	1 97
+35	87	1.0	1	0 87
+36	110	1.0	1	3 107
+37	82	1.0	1	0 82
+38	84	1.0	1	2 82
+39	87	1.0	1	1 86
+40	82	1.0	1	2 80
+41	69	1.0	1	0 69
+42	89	1.0	1	1 88
+43	102	1.0	1	2 100
+44	86	1.0	1	0 86
+45	97	1.0	1	1 96
+46	93	1.0	1	5 88
+47	110	1.0	1	1 109
+48	86	1.0	1	0 86
+49	102	1.0	1	2 100
+50	106	1.0	1	3 103
+51	97	1.0	1	0 97
+52	92	1.0	1	0 92
+53	114	1.0	1	7 107
+54	88	1.0	1	3 85
+55	96	1.0	1	1 95
+56	109	1.0	1	0 109
+57	105	1.0	1	0 105
+58	95	1.0	1	1 94
+59	108	1.0	1	2 106
+60	118	1.0	1	1 117
+61	74	1.0	1	5 69
+62	105	1.0	1	1 104
+63	90	1.0	1	1 89
+64	99	1.0	1	3 96
+65	96	1.0	1	4 92
+66	82	1.0	1	1 81
+67	95	1.0	1	2 93
+68	85	1.0	1	0 85
+69	98	1.0	1	0 98
+70	98	1.0	1	0 98
+71	87	1.0	1	3 84
+72	99	1.0	1	1 98
+73	96	1.0	1	1 95
+74	85	1.0	1	2 83
+75	90	1.0	1	4 86
+76	84	1.0	1	3 81
+77	89	1.0	1	4 85
+78	88	1.0	1	2 86
+79	93	1.0	1	3 90
+80	104	1.0	1	4 100
+81	79	1.0	1	0 79
+82	95	1.0	1	2 93
+83	94	1.0	1	1 93
+84	107	1.0	1	3 104
+85	89	1.0	1	0 89
+86	92	1.0	1	1 91
+87	84	1.0	1	1 83
+88	107	1.0	1	1 106
+89	94	1.0	1	2 92
+90	85	1.0	1	0 85
+91	108	1.0	1	1 107
+92	86	1.0	1	2 84
+93	101	1.0	1	2 99
+94	102	1.0	1	2 100
+95	86	1.0	1	1 85
+96	101	1.0	1	0 101
+97	75	1.0	1	0 75
+98	116	1.0	1	1 115
+99	99	1.0	1	3 96
+100	82	1.0	1	3 79
+101	92	1.0	1	2 90
+102	95	1.0	1	0 95
+103	104	1.0	1	4 100
+104	75	1.0	1	1 74
+105	89	1.0	1	1 88
+106	93	1.0	1	1 92
+107	98	1.0	1	1 97
+108	85	1.0	1	2 83
+109	92	1.0	1	5 87
+110	83	1.0	1	1 82
+111	87	1.0	1	1 86
+112	83	1.0	1	1 82
+113	86	1.0	1	1 85
+114	91	1.0	1	0 91
+115	125	1.0	1	0 125
+116	79	1.0	1	0 79
+117	87	1.0	1	1 86
+118	87	1.0	1	0 87
+119	96	1.0	1	0 96
+120	93	1.0	1	2 91
+121	91	1.0	1	2 89
+122	95	1.0	1	0 95
+123	100	1.0	1	2 98
+124	84	1.0	1	1 83
+125	106	1.0	1	0 106
+126	101	1.0	1	1 100
+127	85	1.0	1	2 83
+128	99	1.0	1	1 98
+129	74	1.0	1	0 74
+130	109	1.0	1	1 108
+131	92	1.0	1	1 91
+132	102	1.0	1	2 100
+133	101	1.0	1	2 99
+134	98	1.0	1	2 96
+135	81	1.0	1	2 79
+136	99	1.0	1	1 98
+137	87	1.0	1	3 84
+138	90	1.0	1	1 89
+139	78	1.0	1	2 76
+140	80	1.0	1	5 75
+141	114	1.0	1	1 113
+142	103	1.0	1	0 103
+143	95	1.0	1	2 93
+144	103	1.0	1	2 101
+145	97	1.0	1	1 96
+146	97	1.0	1	1 96
+147	93	1.0	1	3 90
+148	78	1.0	1	1 77
+149	57	1.0	1	2 55
+150	51	1.0	1	1 50
+
+RUN STATISTICS FOR INPUT FILE: /mnt/d/Metagenomics/D02_T2_pilot/cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+=============================================
+17288597 sequences processed in total
+
