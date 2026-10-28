@@ -1,0 +1,12 @@
+PASS	Basic Statistics	ERR14836067_1.fastq.gz
+PASS	Per base sequence quality	ERR14836067_1.fastq.gz
+WARN	Per tile sequence quality	ERR14836067_1.fastq.gz
+PASS	Per sequence quality scores	ERR14836067_1.fastq.gz
+FAIL	Per base sequence content	ERR14836067_1.fastq.gz
+WARN	Per sequence GC content	ERR14836067_1.fastq.gz
+PASS	Per base N content	ERR14836067_1.fastq.gz
+WARN	Sequence Length Distribution	ERR14836067_1.fastq.gz
+PASS	Sequence Duplication Levels	ERR14836067_1.fastq.gz
+PASS	Overrepresented sequences	ERR14836067_1.fastq.gz
+PASS	Adapter Content	ERR14836067_1.fastq.gz
+
