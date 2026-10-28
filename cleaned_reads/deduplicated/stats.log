@@ -1,0 +1,48 @@
+[ {
+    "Program_details": {
+        "program": "hts_SuperDeduper",
+        "version": "v1.3.3",
+        "options": {
+            "avg-qual-score": 30,
+            "fastq-output": "ERR14836067_dedup",
+            "force": false,
+            "inform-avg-qual-score": 5,
+            "length": 10,
+            "log_freq": 1000000,
+            "notes": "",
+            "read1-input": [ "/mnt/d/Metagenomics/ERR14836067_1.fastq.gz"],
+            "read2-input": [ "/mnt/d/Metagenomics/ERR14836067_2.fastq.gz"],
+            "start": 10,
+            "stats-file": "stats.log",
+            "uncompressed": false
+        }
+    },
+    "Fragment": {
+        "in": 17288597,
+        "out": 17288597,
+        "basepairs_in": 5154147229,
+        "basepairs_out": 5154147229,
+        "ignored": 0,
+        "duplicate": 0,
+        "duplicate_saturation": [ [1000000,0], [2000000,0], [3000000,0], [4000000,0], [5000000,0], [6000000,0], [7000000,0], [8000000,0], [9000000,0], [10000000,0], [11000000,0], [12000000,0], [13000000,0], [14000000,0], [15000000,0], [16000000,0], [17000000,0], [17288597,0] ]
+    },
+    "Single_end": {
+        "in": 0,
+        "out": 0,
+        "basepairs_in": 0,
+        "basepairs_out": 0
+    },
+    "Paired_end": {
+        "in": 17288597,
+        "out": 17288597,
+        "Read1": {
+            "basepairs_in": 2577154294,
+            "basepairs_out": 2577154294
+        },
+        "Read2": {
+            "basepairs_in": 2576992935,
+            "basepairs_out": 2576992935
+        }
+    }
+  }
+]
