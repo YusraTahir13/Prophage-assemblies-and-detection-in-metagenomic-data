@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR14836067_1	/mnt/d/Metagenomics/D02_T2_pilot/qc/raw_fastqc/ERR14836067_1_fastqc.zip
+FastQC	all_sections	ERR14836067_2	/mnt/d/Metagenomics/D02_T2_pilot/qc/raw_fastqc/ERR14836067_2_fastqc.zip
+FastQC	all_sections	ERR14836067_dedup_R1_unpaired_1	/mnt/d/Metagenomics/D02_T2_pilot/qc/trimmed_fastqc/ERR14836067_dedup_R1_unpaired_1_fastqc.zip
+FastQC	all_sections	ERR14836067_dedup_R1_val_1	/mnt/d/Metagenomics/D02_T2_pilot/qc/trimmed_fastqc/ERR14836067_dedup_R1_val_1_fastqc.zip
+FastQC	all_sections	ERR14836067_dedup_R2_unpaired_2	/mnt/d/Metagenomics/D02_T2_pilot/qc/trimmed_fastqc/ERR14836067_dedup_R2_unpaired_2_fastqc.zip
+FastQC	all_sections	ERR14836067_dedup_R2_val_2	/mnt/d/Metagenomics/D02_T2_pilot/qc/trimmed_fastqc/ERR14836067_dedup_R2_val_2_fastqc.zip
