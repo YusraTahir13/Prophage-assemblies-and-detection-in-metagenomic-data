@@ -62,21 +62,19 @@ cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
 
 ### Results
 
-|    Metric                           |        Count        |
-|------------------------------------ |---------------------|
-| Input paired-end fragments          | 17,288,597          |
-| Output paired-end fragments         | 17,288,597          |
-| Duplicate fragments detected        |     0               |
-| Ignored fragments                   |     0               |
-| R1 output reads                     |  17,288,597         |
-| R2 output reads                     |  17,288,597         |
-| Total output reads across R1 and R2 | 34,577,194          |
+|    Metric                           |        Count          |
+|------------------------------------ |-----------------------|
+| Input paired-end fragments          | 17,288,597            |
+| Output paired-end fragments         | 17,288,597            |
+| Duplicate fragments detected        |     0                 |
+| Ignored fragments                   |     0                 |
+| R1 output reads                     |  17,288,597           |
+| R2 output reads                     |  17,288,597           |
+| Total output reads across R1 and R2 | 34,577,194            |
 
 No duplicate fragments were detected. The output files were verified to contain 17,288,597 reads each.
 
-[Deduplication statistics]
-
-[Deduplication log]
+[Deduplication statistics](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/cleaned_reads/deduplicated/stats.log)
 
 ### iii. Adapter and Quality Trimming 
 
@@ -105,6 +103,7 @@ Trimmed paired-end FASTQ files in [cleaned_reads/trimmed/](https://github.com/Yu
 
 Of 17,288,597 input read pairs, 17,232,868 pairs (99.68%) were retained after adapter and quality trimming (Q30) and the 60 bp minimum paired-read length filter. Eligible reads were saved separately as unpaired reads when their mate did not meet the paired-end length requirement. The unpaired reads had a minimum length of 35 bp.
 
+[FastQC reports: qc/trimmed_fastqc/](
 
 4. Human-Read Removal (BWA v0.7.17 and SAMtools v1.16.1)
 
