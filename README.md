@@ -12,7 +12,7 @@ The implementation is being developed with reference to the published study, the
 
 ## 2. Pilot Dataset
 
-The workflow is being performed initially using only the (D02_pilot_sample) raw dataset. Three sequencing FASTQ files were downloaded from the European Nucleotide Archive (ENA), study accession PRJEB88320. These include two paired-end short-read files (R1 and R2) and one corresponding long-read file.
+The workflow is being performed initially using only the (D02_pilot_sample) raw dataset. Three sequencing FASTQ files were downloaded from the [European Nucleotide Archive (ENA)](https://www.ebi.ac.uk/ena/browser/home), study accession PRJEB88320. These include two paired-end short-read files (R1 and R2) and one corresponding long-read file.
 
 | Data type     |  Run accession    |   File                 | Read_count   |
 |---------------|-------------------|------------------------|--------------|
