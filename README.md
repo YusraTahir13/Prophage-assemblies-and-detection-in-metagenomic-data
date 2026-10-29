@@ -208,6 +208,8 @@ FastQC input files:
 - results/host_removal/ERR14836067_cleaned_2.fastq.gz
 - results/host_removal/ERR14836067_cleaned_orphans.fastq.gz
 
+Output: [qc/cleaned_fastqc/](
+
 MultiQC was used to consolidate FastQC reports from the raw, trimmed, and post-host-removal stages.
 
 MultiQC report: qc/multiqc_post_host_removal/multiqc_report.html
