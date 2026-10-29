@@ -107,7 +107,7 @@ Of 17,288,597 input read pairs, 17,232,868 pairs (99.68%) were retained after ad
 
 [Multiqc report after trimming](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/qc/multiqc_report/multiqc_report.html)
 
-### 4. Human-Read Removal (BWA v0.7.17 and SAMtools v1.16.1)
+### 4. Human-Read Removal
 
 The human reference genome was downloaded to identify and remove human-derived reads from the metagenomic sequencing data. The hg38 (GRCh38) reference genome was used for host-read removal.
 
@@ -140,9 +140,9 @@ The indexing process was completed successfully, and all five output index files
 The R1 and R2 unpaired reads were combined into a single FASTQ file so that reads originating from either input could be processed together in one BWA alignment step against the human reference genome.
 
 Input files:
-- cleaned_reads/trimmed/ERR14836067_dedup_R1_unpaired_1.fq.gz
+- [cleaned_reads/trimmed/ERR14836067_dedup_R1_unpaired_1.fq.gz](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/cleaned_reads/trimmed/ERR14836067_dedup_R1_unpaired_1.fq.gz)
   
-- cleaned_reads/trimmed/ERR14836067_dedup_R2_unpaired_2.fq.gz
+- [cleaned_reads/trimmed/ERR14836067_dedup_R2_unpaired_2.fq.gz](
   
 Combined output:
 - cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz
