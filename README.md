@@ -107,47 +107,114 @@ Of 17,288,597 input read pairs, 17,232,868 pairs (99.68%) were retained after ad
 
 [Multiqc report after trimming](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/qc/multiqc_report/multiqc_report.html)
 
-4. Human-Read Removal (BWA v0.7.17 and SAMtools v1.16.1)
+### 4. Human-Read Removal (BWA v0.7.17 and SAMtools v1.16.1)
 
-Human-read removal is intended to reduce host contamination before downstream metagenomic analysis.
+The human reference genome was downloaded to identify and remove human-derived reads from the metagenomic sequencing data. The hg38 (GRCh38) reference genome was used for host-read removal.
 
-Input
+Reference source: UCSC Genome Browse
 
-Processed paired-end reads following trimming
+Downloaded file: references/hg38/hg38.fa.gz
 
-Tools
+The reference genome was downloaded in compressed .gz format.It was decompressed to obtain the plain FASTA file required for reference indexing and alignment with BWA.
 
-BWA v0.7.17 for alignment against the human reference genome
+Input: references/hg38/hg38.fa.gz
 
-SAMtools v1.16.1 for alignment-file processing
+Output: references/hg38/hg38.fa
 
-Planned output
+After decompression, the hg38.fa file had a reported size of approximately 3.1 GB. The FASTA file contains the human genome nucleotide sequences used as the reference during read alignment.
 
-Reads that do not map to the human reference genome (hg38/GRCh38)
+The reference genome file references/hg38/hg38.fa was used as the input file to perform indexing using BWA v0.7.17-r1188.
 
-Results: The software availability and reference directory have been prepared. However, completion of reference preparation, human-read removal, and the final retained-read counts has not yet been confirmed.
+Input File: references/hg38/hg38.fa
 
-5. Consolidated Quality Control (MultiQC v1.35)
+Output Files:
 
-MultiQC was used to aggregate available FastQC reports into a single report for convenient inspection.
+- hg38.fa.amb
+- hg38.fa.ann
+- hg38.fa.bwt
+- hg38.fa.pac
+- hg38.fa.sa
+  
+The indexing process was completed successfully, and all five output index files were generated.
 
-Input
+The R1 and R2 unpaired reads were combined into a single FASTQ file so that reads originating from either input could be processed together in one BWA alignment step against the human reference genome.
 
-Available FastQC reports from the preprocessing workflow
+Input files:
+- cleaned_reads/trimmed/ERR14836067_dedup_R1_unpaired_1.fq.gz
+  
+- cleaned_reads/trimmed/ERR14836067_dedup_R2_unpaired_2.fq.gz
+  
+Combined output:
+- cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz
 
-Tool: MultiQC v1.35
+The combined file contained 70,145 reads, matching the sum of the two input files.
 
-Output
+BWA v0.7.17-r1188 and SAMtools v1.16.1 were used to align paired and unpaired reads against hg38 and extract unmapped reads.
 
-qc/multiqc_report/multiqc_report.html
+Input files:
+- cleaned_reads/trimmed/ERR14836067_dedup_R1_val_1.fq.gz
+  
+- cleaned_reads/trimmed/ERR14836067_dedup_R2_val_2.fq.gz
+  
+- cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz
+  
+Reference: references/hg38/hg38.fa
 
-Results: MultiQC detected six FastQC reports and generated a consolidated HTML report.
+BWA v0.7.17-r1188, using 2 threads was used to align the reads against the hg38 reference genome. SAMtools v1.16.1, using 1 additional thread was used to process alignment records and extract unmapped reads into FASTQ files.
 
-View MultiQC report
+Paired-end reads and originally unpaired reads were processed in separate alignment steps. Retained singleton/orphan reads were tracked, and the retained orphan outputs were combined into a final orphan file.
 
-View MultiQC log
+Output files
 
-Next Steps
+ERR14836067_cleaned_1.fastq.gz
 
-Once trimming and human-read removal are verified, the processed short-read data can be used for downstream metagenomic assembly, genome binning, and viral/prophage identification. The long-read dataset will be analysed separately.
+ERR14836067_cleaned_2.fastq.gz
+
+ERR14836067_paired_singletons.fastq.gz
+
+ERR14836067_unpaired_unmapped.fastq.gz
+
+ERR14836067_cleaned_orphans.fastq.gz
+
+ERR14836067_read_count_summary.tsv
+
+Alignment logs:
+
+- results/host_removal/ERR14836067_paired_bwa.log
+  
+- results/host_removal/ERR14836067_unpaired_bwa.log
+
+### Read-Count Summary and Validation
+
+The human-removal script reported the following counts:
+
+| Metric                        | Read records     |
+|-------------------------------|------------------|
+|Input paired R1                | 17,232,868       |
+|Input paired R2                | 17,232,868       |
+|Input unpaired                 | 70,145           |
+|Total input records            | 34,535,881       |
+|Mapped primary records reported|      0           |
+|Retained records reported      | 34,535,881       |
+
+The script reported zero mapped primary records. This result must be verified before concluding that human-derived reads were successfully removed.
+
+### Quality Control After Host Removal
+
+FastQC was run on the retained reads to assess their quality after host removal.
+
+FastQC input files:
+- results/host_removal/ERR14836067_cleaned_1.fastq.gz
+- results/host_removal/ERR14836067_cleaned_2.fastq.gz
+- results/host_removal/ERR14836067_cleaned_orphans.fastq.gz
+
+MultiQC was used to consolidate FastQC reports from the raw, trimmed, and post-host-removal stages.
+
+MultiQC report: qc/multiqc_post_host_removal/multiqc_report.html
+
+
+
+
+
+identification. The long-read dataset will be analysed separately.
 
