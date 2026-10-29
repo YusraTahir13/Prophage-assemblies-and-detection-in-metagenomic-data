@@ -42,7 +42,7 @@ ERR14836067_2.fastq.gz (R2)
 
 [qc/raw_fastqc/ERR14836067_1_fastqc.html](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/qc/raw_fastqc/ERR14836067_1_fastqc.html)
 
-qc/raw_fastqc/ERR14836067_2_fastqc.html
+[qc/raw_fastqc/ERR14836067_2_fastqc.html](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/qc/raw_fastqc/ERR14836067_2_fastqc.html)
 
 ### ii. Deduplication 
 
