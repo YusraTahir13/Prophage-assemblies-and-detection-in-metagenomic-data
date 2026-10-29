@@ -212,7 +212,7 @@ FastQC was run on the retained reads to assess their quality after host removal.
 - results/host_removal/ERR14836067_cleaned_2.fastq.gz
 - results/host_removal/ERR14836067_cleaned_orphans.fastq.gz
 
-**Output:** [qc/cleaned_fastqc/](
+**Output:** [qc/cleaned_fastqc/](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/tree/main/qc/cleaned_fastqc)
 
 MultiQC was used to consolidate FastQC reports from the raw, trimmed, and post-host-removal stages.
 
