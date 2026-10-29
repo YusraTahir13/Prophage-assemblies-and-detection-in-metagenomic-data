@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-This repository documents a reproduction of the computational workflow described in the research paper [“Long-read metagenomics reveals phage dynamics in the human gut microbiome”](https://www.nature.com/articles/s41586-025-09786-2) upto 'Prophages in long-read assemblies'.
+This repository documents a reproduction of the computational workflow described in the research paper [“Long-read metagenomics reveals phage dynamics in the human gut microbiome”](https://www.nature.com/articles/s41586-025-09786-2) upto **'Prophages in long-read assemblies'.**
 
 The project aims to establish and document a reproducible metagenomic analysis workflow, beginning with sequencing-read quality control and preprocessing and progressing towards microbial assembly, viral and prophage detection, and host assignment.
 
@@ -171,7 +171,7 @@ cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz
 
 **Output files**
 
-[results/host_removal]()
+[results/host_removal](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/tree/main/results/host_removal)
 
 **Alignment logs:**
 
