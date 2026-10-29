@@ -94,17 +94,18 @@ Read 2 (R2): cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
 
 Tool: Trim Galore v0.6.7
 
-### Configured parameters
-
-Quality threshold: Q30
-
-Minimum read length: 60 bp
-
-Paired-end processing
-
 ### Output
 
-Trimmed paired-end FASTQ files in cleaned_reads/trimmed/
+Trimmed paired-end FASTQ files in [cleaned_reads/trimmed/](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/tree/main/cleaned_reads/trimmed)
+
+| Output file                           | Result after trimming    |
+| --------------------------------------|--------------------------|
+|ERR14836067_dedup_R1_val_1.fq.gz       |17,232,868 paired R1 reads|
+|ERR14836067_dedup_R2_val_2.fq.gz       |17,232,868 paired R2 reads|
+|ERR14836067_dedup_R1_unpaired_1.fq.gz  |41,567 unpaired R1 reads  |
+|ERR14836067_dedup_R2_unpaired_2.fq.gz  |28,578 unpaired R2 reads  |
+
+Of 17,288,597 input read pairs, 17,232,868 pairs (99.68%) were retained after adapter and quality trimming (Q30) and the 60 bp minimum paired-read length filter. Eligible reads were saved separately as unpaired reads when their mate did not meet the paired-end length requirement. The unpaired reads had a minimum length of 35 bp.
 
 
 4. Human-Read Removal (BWA v0.7.17 and SAMtools v1.16.1)
