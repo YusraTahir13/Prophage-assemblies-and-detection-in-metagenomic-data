@@ -183,7 +183,7 @@ ERR14836067_read_count_summary.tsv
 
 **Alignment logs:**
 
-[results/host_removal/ERR14836067_paired_bwa.log](
+[results/host_removal/ERR14836067_paired_bwa.log](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/results/host_removal/ERR14836067_paired_bwa.log)
   
 [results/host_removal/ERR14836067_unpaired_bwa.log](
 
