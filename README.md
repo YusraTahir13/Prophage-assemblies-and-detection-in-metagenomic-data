@@ -103,7 +103,7 @@ Trimmed paired-end FASTQ files in [cleaned_reads/trimmed/](https://github.com/Yu
 
 Of 17,288,597 input read pairs, 17,232,868 pairs (99.68%) were retained after adapter and quality trimming (Q30) and the 60 bp minimum paired-read length filter. Eligible reads were saved separately as unpaired reads when their mate did not meet the paired-end length requirement. The unpaired reads had a minimum length of 35 bp.
 
-[FastQC reports: qc/trimmed_fastqc/](
+[FastQC reports: qc/trimmed_fastqc/](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/tree/main/qc/trimmed_fastqc)
 
 4. Human-Read Removal (BWA v0.7.17 and SAMtools v1.16.1)
 
