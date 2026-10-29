@@ -6,7 +6,7 @@ This repository documents a reproduction of the computational workflow described
 
 The project aims to establish and document a reproducible metagenomic analysis workflow, beginning with sequencing-read quality control and preprocessing and progressing towards microbial assembly, viral and prophage detection, and host assignment.
 
-The initial analysis uses a pilot dataset (D02_sample) containing paired-end short-read sequencing data and a corresponding long-read dataset. The pilot approach allows the workflow, software requirements, intermediate outputs, and potential computational issues to be assessed before extending the analysis to additional samples.
+The initial analysis uses a pilot dataset (D02_T2_sample) containing paired-end short-read sequencing data and a corresponding long-read dataset. The pilot approach allows the workflow, software requirements, intermediate outputs, and potential computational issues to be assessed before extending the analysis to additional samples.
 
 The implementation is being developed with reference to the published study, the relevant Bhatt Lab workflow resources, and the project requirements. The workflow is executed through individual Bash scripts in a Linux environment using Windows Subsystem for Linux (WSL).
 
@@ -50,7 +50,11 @@ Following the initial quality assessment, SuperDeduper was used to identify and 
 
 ### Input
 
-Paired-end short reads from run ERR14836067
+The input files were paired-end, deduplicated FASTQ files generated during the previous deduplication step.
+
+Read 1 (R1): cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+
+Read 2 (R2): cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
 
 **Tool:** SuperDeduper (v1.3.3)
 
