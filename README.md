@@ -171,17 +171,7 @@ cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz
 
 **Output files**
 
-ERR14836067_cleaned_1.fastq.gz
-
-ERR14836067_cleaned_2.fastq.gz
-
-ERR14836067_paired_singletons.fastq.gz
-
-ERR14836067_unpaired_unmapped.fastq.gz
-
-ERR14836067_cleaned_orphans.fastq.gz
-
-ERR14836067_read_count_summary.tsv
+[results/host_removal]()
 
 **Alignment logs:**
 
