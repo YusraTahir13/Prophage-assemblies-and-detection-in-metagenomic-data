@@ -8,7 +8,7 @@ The project aims to establish and document a reproducible metagenomic analysis w
 
 The initial analysis uses a pilot dataset (D02_T2_sample) containing paired-end short-read sequencing data and a corresponding long-read dataset. The pilot approach allows the workflow, software requirements, intermediate outputs, and potential computational issues to be assessed before extending the analysis to additional samples.
 
-The implementation is being developed with reference to the published study, the relevant Bhatt Lab workflow resources, and the project requirements. The workflow is executed through individual Bash scripts in a Linux environment using Windows Subsystem for Linux (WSL).
+The implementation is being developed with reference to the published study, the relevant github workflow resources, and the project requirements. The workflow is executed through individual Bash scripts in a Linux environment using Windows Subsystem for Linux (WSL).
 
 ## 2. Pilot Dataset
 
@@ -151,7 +151,9 @@ The indexing process was completed successfully, and all five output index files
 
 The combined file contained 70,145 reads, matching the sum of the two input files.
 
-- BWA v0.7.17-r1188 and SAMtools v1.16.1 were used to align paired and unpaired reads against hg38 and extract unmapped reads.
+**Tools**
+
+**BWA v0.7.17-r1188** and **SAMtools v1.16.1** were used to align paired and unpaired reads against hg38 and extract unmapped reads.
 
 **Input files:**
 
