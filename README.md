@@ -139,12 +139,14 @@ The indexing process was completed successfully, and all five output index files
 
 The R1 and R2 unpaired reads were combined into a single FASTQ file so that reads originating from either input could be processed together in one BWA alignment step against the human reference genome.
 
-Input files:
+### Input files:
+
 - [cleaned_reads/trimmed/ERR14836067_dedup_R1_unpaired_1.fq.gz](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/cleaned_reads/trimmed/ERR14836067_dedup_R1_unpaired_1.fq.gz)
   
-- [cleaned_reads/trimmed/ERR14836067_dedup_R2_unpaired_2.fq.gz](
+- [cleaned_reads/trimmed/ERR14836067_dedup_R2_unpaired_2.fq.gz](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/cleaned_reads/trimmed/ERR14836067_dedup_R2_unpaired_2.fq.gz)
   
-Combined output:
+### Combined output:
+
 - cleaned_reads/trimmed/ERR14836067_unpaired_combined.fq.gz
 
 The combined file contained 70,145 reads, matching the sum of the two input files.
