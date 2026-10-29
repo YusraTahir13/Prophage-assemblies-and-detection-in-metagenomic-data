@@ -52,9 +52,7 @@ Following the initial quality assessment, SuperDeduper was used to identify and 
 
 The input files were paired-end, deduplicated FASTQ files generated during the previous deduplication step.
 
-Read 1 (R1): cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
-
-Read 2 (R2): cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
+Paired-end short reads from run ERR14836067
 
 **Tool:** SuperDeduper (v1.3.3)
 
@@ -88,7 +86,11 @@ Trimming was configured to remove adapter sequences and low-quality bases from t
 
 ### Input
 
-Deduplicated R1 and R2 FASTQ files
+The input files were paired-end, deduplicated FASTQ files generated during the previous deduplication step.
+
+Read 1 (R1): cleaned_reads/deduplicated/ERR14836067_dedup_R1.fastq.gz
+
+Read 2 (R2): cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
 
 Tool: Trim Galore v0.6.7
 
@@ -104,9 +106,6 @@ Paired-end processing
 
 Trimmed paired-end FASTQ files in cleaned_reads/trimmed/
 
-Results: The trimming configuration and execution-log location are documented. Completion of trimming and the final output read counts still need to be confirmed.
-
-View trimming log
 
 4. Human-Read Removal (BWA v0.7.17 and SAMtools v1.16.1)
 
