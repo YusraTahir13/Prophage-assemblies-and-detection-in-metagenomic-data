@@ -50,9 +50,7 @@ Following the initial quality assessment, SuperDeduper was used to identify and 
 
 ### Input
 
-The input files were paired-end, deduplicated FASTQ files generated during the previous deduplication step.
-
-Paired-end short reads from run ERR14836067
+Paired-end short reads from run ERR14836067_1.fastq.gz (R1) and ERR14836067_2.fastq.gz (R2)
 
 **Tool:** SuperDeduper (v1.3.3)
 
@@ -76,11 +74,11 @@ cleaned_reads/deduplicated/ERR14836067_dedup_R2.fastq.gz
 
 No duplicate fragments were detected. The output files were verified to contain 17,288,597 reads each.
 
-(deduplication statistics)[
+[Deduplication statistics]
 
-View deduplication log
+[Deduplication log]
 
-3. Adapter and Quality Trimming 
+### iii. Adapter and Quality Trimming 
 
 Trimming was configured to remove adapter sequences and low-quality bases from the paired-end reads.
 
