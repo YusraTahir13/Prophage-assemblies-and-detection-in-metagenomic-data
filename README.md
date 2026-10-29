@@ -129,7 +129,7 @@ Downloaded file: references/hg38/hg38.fa.gz
 
 **Output Files:**
 
-- hg38.fa.amb
+- [hg38.fa.amb](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/references/hg38/hg38.fa.amb)
 - hg38.fa.ann
 - hg38.fa.bwt
 - hg38.fa.pac
