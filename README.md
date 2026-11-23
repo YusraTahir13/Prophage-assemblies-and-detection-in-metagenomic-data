@@ -14,11 +14,11 @@ The implementation is being developed with reference to the published study, the
 
 The workflow is being performed initially using only the (D02_pilot_sample) raw dataset. Three sequencing FASTQ files were downloaded from the [European Nucleotide Archive (ENA)](https://www.ebi.ac.uk/ena/browser/home), study accession PRJEB88320. These include two paired-end short-read files (R1 and R2) and one corresponding long-read file.
 
-| Data type     |  Run accession    |   File                 | Read_count   |
-|---------------|-------------------|------------------------|--------------|
-| Short-read R1 | ERR14836067       | ERR14836067_1.fastq.gz |  17288597    |
-| Short-read R2 | ERR14836067       | ERR14836067_2.fastq.gz |  17288597    |
-| Long read     | ERR14838507       | ERR14838507.fastq.gz   |  7294984     |
+| Data type     |  Run accession    |   File                 | Read_count   | Base_count |
+|---------------|-------------------|------------------------|--------------|------------|
+| Short-read R1 | ERR14836067       | ERR14836067_1.fastq.gz |  17288597    |  2.5 Gbp   |
+| Short-read R2 | ERR14836067       | ERR14836067_2.fastq.gz |  17288597    |  2.5 Gbp   |
+| Long read     | ERR14838507       | ERR14838507.fastq.gz   |  7294984     |  32.23 Gb  |
 
 All three downloaded files passed the gzip integrity check. Because of their large size, The raw FASTQ files have not been uploaded to GitHub. The current analysis focuses on short-read preprocessing; long-read analysis will be performed separately.
 
@@ -189,7 +189,7 @@ The human-removal script reported the following counts:
 |Input paired R2                | 17,232,868       |
 |Input unpaired                 | 70,145           |
 |Total input records            | 34,535,881       |
-|Mapped primary records reported|      0           |
+|Mapped primary records reported|    0             |
 |Retained records reported      | 34,535,881       |
 
 The script reported zero mapped primary records. This result must be verified before concluding that human-derived reads were successfully removed.
@@ -212,7 +212,7 @@ MultiQC was used to consolidate FastQC reports from the raw, trimmed, and post-h
 
 ## 3(b) Quality control and preprocessing for long reads
 
-The initial preprocessing phase focuses on sequencing quality control and read preprocessing, following the general workflow described in the paper, include initial quality assessment, duplicate removal, and human-read removal. This phase prepares the long-read data for subsequent metagenomic assembly and viral/prophage detection.
+The initial preprocessing phase focuses on sequencing quality control and read preprocessing, following the general workflow described in the paper, include raw quality control, filtering, human-read removal and post qc. This phase prepares the long-read data for subsequent metagenomic assembly and viral/prophage detection.
 
 ### i. Raw Long-Read Quality Control (NanoPlot) 
 
@@ -303,9 +303,33 @@ This file contains the extracted unmapped reads intended for downstream metageno
 
 **Intermediate Outputs**
 
-ERR14838507.host_alignment.sam – Minimap2 alignment file
+- ERR14838507.host_alignment.sam – Minimap2 alignment file
 
-18_ERR14838507_host_removal_fastq_extraction_summary.txt – Extraction summary report
+- 18_ERR14838507_host_removal_fastq_extraction_summary.txt – Extraction summary report
 
 - FASTQ extraction was successful; however, zero reads mapped to hg38, requiring further verification of host removal.
 
+### iv. Host mapping cross validation (ONT Long Reads)
+
+To validate the Minimap2 alignment workflow - A positive control was performed by generating 50 synthetic human reads (5,000 bp each) from hg38 and aligning them using Minimap2 (map-ont). Samtools was used to calculate mapping statistics to validate the alignment workflow and investigate the zero-mapping result observed during host removal.
+
+**Input file**
+
+- Human reference genome: references/hg38/hg38.fa
+  
+- Reference index: hg38.fa.fai
+
+Output file
+
+**Result summary**
+
+| Metric                        |    Result         |
+|-------------------------------|-------------------|
+|Synthetic reads                |     50            |
+|Read length                    |    5,000 bp       |
+|Total SAM records              |     55            |
+|Mapped records                 |     55            |
+|Unmapped records               |     0             |
+|Mapping percentage             |    100%           |
+
+**Conclusion** Minimap2 successfully aligned the synthetic human reads to hg38, confirming that the reference and alignment workflow can detect human sequences.
