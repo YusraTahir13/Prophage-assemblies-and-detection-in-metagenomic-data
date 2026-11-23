@@ -22,7 +22,7 @@ The workflow is being performed initially using only the (D02_pilot_sample) raw 
 
 All three downloaded files passed the gzip integrity check. Because of their large size, The raw FASTQ files have not been uploaded to GitHub. The current analysis focuses on short-read preprocessing; long-read analysis will be performed separately.
 
-## 3. Quality control and preprocessing
+## 3(a). Quality control and preprocessing for short reads
 
 The initial preprocessing phase focuses on sequencing quality control and read preprocessing, following the general workflow described in the paper, include initial quality assessment, duplicate removal, adapter and quality trimming, and human-read removal. This phase prepares the short-read data for subsequent metagenomic assembly and viral/prophage detection.
 
@@ -210,4 +210,102 @@ MultiQC was used to consolidate FastQC reports from the raw, trimmed, and post-h
 
 **MultiQC report:** [qc/multiqc_post_host_removal/multiqc_report.html](https://github.com/YusraTahir13/Prophage-assemblies-and-detection-in-metagenomic-data/blob/main/qc/multiqc_post_host_removal/multiqc_report.html)
 
+## 3(b) Quality control and preprocessing for long reads
+
+The initial preprocessing phase focuses on sequencing quality control and read preprocessing, following the general workflow described in the paper, include initial quality assessment, duplicate removal, and human-read removal. This phase prepares the long-read data for subsequent metagenomic assembly and viral/prophage detection.
+
+### i. Raw Long-Read Quality Control (NanoPlot) 
+
+Raw Nanopore long-read sequencing data was subjected to initial quality control (QC) using NanoPlot to assess read quality, read-length distribution, and sequencing statistics before downstream processing.
+
+**Input file**
+
+/mnt/d/Metagenomics/ERR14838507.fastq.gz
+
+The input file was a compressed FASTQ file containing raw, unprocessed Nanopore long reads.
+
+**Tool:** NanoPlot v1.41.6
+
+**Output**
+
+qc/14_long_reads_raw_NanoPlot-report.html
+
+### ii. Quality Filtering and Post-Filtering QC
+
+Raw Nanopore long-read sequencing data was quality-filtered using Fastplong to remove short and low-quality reads.
+
+**Input file**
+
+/mnt/d/Metagenomics/ERR14838507.fastq.gz
+
+The original compressed FASTQ file containing raw Nanopore sequencing reads was used as input for quality filtering.
+
+**Tool:** Fastplong v0.3.0
+
+**Filtering Parameters**
+
+- Minimum read length: 500 bp
+
+- Quality threshold: Q10
+
+- Adapter trimming was disabled to preserve the original read sequences.
+
+**Output File**
+
+cleaned_reads/filtered_long_reads_fastplong/ERR14838507.qc.fq.gz
+
+**Post-filtering NanoPlot QC**
+
+qc/16_long_reads_filtered_NanoPlot-report.html
+
+**Read-Count Summary**
+
+| Metric                        | Before Filtering   | After Filtering |
+|-------------------------------|--------------------|-----------------|
+|Total reads                    | 7,294,984          | 6,309,145       |
+|Total bases (Gb)               | 32.23              | 31.89           |
+|Q20 bases (%)                  | 86.96%             | 86.96%          |
+|Q30 bases (%)                  | 69.81%	           | 69.80%          |
+
+- Approximately 13.51% (985,839) of reads were removed, accounting for only 1.06% (0.34) of the total bases. This indicates that most removed reads were relatively short.
+
+### iii. Host (Human) Removal from ONT Long Reads
+
+To identify and remove potential human host-derived sequences from quality-filtered (ONT) long reads by aligning sequencing reads against the human reference genome (hg38) and extracting unmapped reads for downstream metagenomic analysis.
+
+**Tools**
+
+Minimap2 (v2.26-r1175)
+
+Samtools (v1.16.1)
+
+**Input files**
+
+- Quality-filtered ONT reads: ERR14838507.qc.fq.gz
+
+- Human reference genome: hg38.fa
+
+Quality-filtered ONT long reads were aligned against the human reference genome (hg38) using Minimap2 with the map-ont preset. The resulting SAM file was processed using Samtools to identify and extract unmapped reads. The extracted FASTQ file was subsequently validated, and alignment statistics, a summary report, and execution logs were generated.
+
+**Output files**
+
+reads_ERR14838507.fastq.gz
+
+This file contains the extracted unmapped reads intended for downstream metagenomic analysis.
+
+| Metric                        | Count            |
+|-------------------------------|------------------|
+|Total input reads              |   6,309,145      |
+|Mapped reads                   |      0           |
+|Unmapped reads                 |   6,309,145      |
+|Extracted reads                |   6,309,145      |
+|FASTQ validation               |    PASSED        |
+
+**Intermediate Outputs**
+
+ERR14838507.host_alignment.sam – Minimap2 alignment file
+
+18_ERR14838507_host_removal_fastq_extraction_summary.txt – Extraction summary report
+
+- FASTQ extraction was successful; however, zero reads mapped to hg38, requiring further verification of host removal.
 
