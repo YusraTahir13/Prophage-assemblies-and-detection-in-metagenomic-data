@@ -285,7 +285,7 @@ Samtools (v1.16.1)
 
 - Human reference genome: hg38.fa
 
-Quality-filtered ONT long reads were aligned against the human reference genome (hg38) using Minimap2 with the map-ont preset. The resulting SAM file was processed using Samtools to identify and extract unmapped reads. The extracted FASTQ file was subsequently validated, and alignment statistics, a summary report, and execution logs were generated.
+Quality-filtered ONT long reads were aligned against the human reference genome (hg38) using Minimap2 with the *map-ont preset*. The resulting SAM file was processed using Samtools to identify and extract unmapped reads. The extracted FASTQ file was subsequently validated, and alignment statistics, a summary report, and execution logs were generated.
 
 **Output files**
 
@@ -311,7 +311,7 @@ This file contains the extracted unmapped reads intended for downstream metageno
 
 ### iv. Host mapping cross validation (ONT Long Reads)
 
-To validate the Minimap2 alignment workflow - A positive control was performed by generating 50 synthetic human reads (5,000 bp each) from hg38 and aligning them using Minimap2 (map-ont). Samtools was used to calculate mapping statistics to validate the alignment workflow and investigate the zero-mapping result observed during host removal.
+To validate the Minimap2 alignment workflow - A positive control was performed by generating 50 synthetic human reads (5,000 bp each) from hg38 and aligning them using Minimap2 *(map-ont)*. Samtools was used to calculate mapping statistics to validate the alignment workflow and investigate the zero-mapping result observed during host removal.
 
 **Input file**
 
@@ -333,3 +333,39 @@ Output file
 |Mapping percentage             |    100%           |
 
 **Conclusion** Minimap2 successfully aligned the synthetic human reads to hg38, confirming that the reference and alignment workflow can detect human sequences.
+
+- Post-host-removal ONT reads were subjected to quality control using NanoPlot v1.41.6 to assess read quality and length distribution.
+  
+Output 
+
+### 4. Metagenomic Assembly for short reads and longs reads 
+
+Metagenomic assembly is the process of combining sequencing reads to reconstruct longer DNA sequences called contigs. It can be performed using both **short-read** and **long-read** sequencing data separately with their respective tools. We perform assembly to reconstruct genomic fragments from microbial communities, making it easier to identify microorganisms, predict genes, and study their functional potential.
+
+## 4(a) Short-Read Metagenomic Assembly Using MEGAHIT
+
+Paired-end short-read metagenomic assembly was performed using MEGAHIT to reconstruct longer DNA sequences (contigs) from overlapping sequencing reads. MEGAHIT uses iterative k-mer-based graph construction and contig generation, followed by the generation of the final assembled sequences.
+
+**Tool** MEGAHIT v1.2.9 
+
+**Input files**
+
+- R1: ERR14836067_cleaned_1.fastq.gz
+  
+- R2: ERR14836067_cleaned_2.fastq.gz
+
+**Output file**
+
+- ERR14836067.contigs.fa – Final assembled contigs in FASTA format.
+
+**Assembly results**
+
+- Total contigs: 162,625
+- Total assembly length: 295.93 Mb
+- N50: 7,010 bp
+- Minimum contig length: 200 bp
+- Maximum contig length: 459,259 bp
+- Average contig length: 1,819 bp
+
+
+
