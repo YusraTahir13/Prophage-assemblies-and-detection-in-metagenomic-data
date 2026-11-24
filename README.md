@@ -275,9 +275,9 @@ To identify and remove potential human host-derived sequences from quality-filte
 
 **Tools**
 
-Minimap2 (v2.26-r1175)
+- Minimap2 (v2.26-r1175)
 
-Samtools (v1.16.1)
+- Samtools (v1.16.1)
 
 **Input files**
 
@@ -338,7 +338,7 @@ To validate the Minimap2 alignment workflow - A positive control was performed b
   
 Output 
 
-### 4. Metagenomic Assembly for short reads and longs reads 
+## 4. Metagenomic Assembly for short reads and longs reads 
 
 Metagenomic assembly is the process of combining sequencing reads to reconstruct longer DNA sequences called contigs. It can be performed using both **short-read** and **long-read** sequencing data separately with their respective tools. We perform assembly to reconstruct genomic fragments from microbial communities, making it easier to identify microorganisms, enabling the detection and characterization of prophages and other viral sequences within microbial communities. It also helps identify potential microbial hosts of these viruses and supports the study of virus–host relationships.
 
@@ -373,17 +373,17 @@ Paired-end short-read metagenomic assembly was performed using MEGAHIT to recons
 
 **Tool:** QUAST v5.2.0 (--fast mode)
 
-### Input file:
+**Input file:**
 
 ERR14836067.contigs.fa
 
-### Output files:
+**Output files:**
 
 link
 
 QUAST applied its default minimum contig length threshold of 500 bp for statistical calculations. Contigs shorter than 500 bp were excluded from the reported statistics. These shorter contigs remained present in the original MEGAHIT assembly FASTA file and were not deleted or modified.
 
-### Assembly assessment results:
+**Assembly assessment results**
 
 - Total assembly length	 - 272,961,575 bp (272.96 Mb)
 - N50	- 9,239 bp
