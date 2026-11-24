@@ -319,7 +319,7 @@ To validate the Minimap2 alignment workflow - A positive control was performed b
   
 - Reference index: hg38.fa.fai
 
-Output file
+**Output file**
 
 **Result summary**
 
@@ -340,11 +340,11 @@ Output
 
 ### 4. Metagenomic Assembly for short reads and longs reads 
 
-Metagenomic assembly is the process of combining sequencing reads to reconstruct longer DNA sequences called contigs. It can be performed using both **short-read** and **long-read** sequencing data separately with their respective tools. We perform assembly to reconstruct genomic fragments from microbial communities, making it easier to identify microorganisms, predict genes, and study their functional potential.
+Metagenomic assembly is the process of combining sequencing reads to reconstruct longer DNA sequences called contigs. It can be performed using both **short-read** and **long-read** sequencing data separately with their respective tools. We perform assembly to reconstruct genomic fragments from microbial communities, making it easier to identify microorganisms, enabling the detection and characterization of prophages and other viral sequences within microbial communities. It also helps identify potential microbial hosts of these viruses and supports the study of virus–host relationships.
 
-## 4(a) Short-Read Metagenomic Assembly Using MEGAHIT
+### i. Short-Read Metagenomic Assembly Using MEGAHIT
 
-Paired-end short-read metagenomic assembly was performed using MEGAHIT to reconstruct longer DNA sequences (contigs) from overlapping sequencing reads. MEGAHIT uses iterative k-mer-based graph construction and contig generation, followed by the generation of the final assembled sequences.
+Paired-end short-read metagenomic assembly was performed using MEGAHIT to reconstruct longer DNA sequences (contigs) from overlapping sequencing reads. MEGAHIT uses iterative k-mer-based graph construction to generate contigs. The default `--min-contig-len` parameter was set to 200 bp, excluding contigs shorter than 200 bp from the final assembly.
 
 **Tool** MEGAHIT v1.2.9 
 
@@ -367,5 +367,54 @@ Paired-end short-read metagenomic assembly was performed using MEGAHIT to recons
 - Maximum contig length: 459,259 bp
 - Average contig length: 1,819 bp
 
+### ii. Quality Assessment of Short-Read Assembly Using QUAST
 
+- The quality of the MEGAHIT-assembled contigs was assessed using QUAST **(Quality Assessment Tool for Genome Assemblies)**. QUAST evaluates assembly statistics, including contig length, N50, L50, and total assembly length, to assess the overall assembly quality.
 
+**Tool:** QUAST v5.2.0 (--fast mode)
+
+### Input file:
+
+ERR14836067.contigs.fa
+
+### Output files:
+
+link
+
+QUAST applied its default minimum contig length threshold of 500 bp for statistical calculations. Contigs shorter than 500 bp were excluded from the reported statistics. These shorter contigs remained present in the original MEGAHIT assembly FASTA file and were not deleted or modified.
+
+### Assembly assessment results:
+
+- Total assembly length	 - 272,961,575 bp (272.96 Mb)
+- N50	- 9,239 bp
+- L50 -	4,718
+- auN -	32,370.4 bp
+- GC content - Undefined
+- Ns per 100 kbp - 0
+
+### iii. Generation of Long-Read Quality Metadata Table
+
+- This step was performed to extract read-level information from host-removed ONT long reads before subsampling. Read ID, sequence length, and average Phred quality score were calculated for each read.
+  
+- This metadata was generated to support subsequent random read selection based on the target sequencing yield. No read filtering or downsampling was performed at this stage.
+
+**Tools:** Python 3, Biopython, NumPy, gzip, and the NanoPlot/NanoGet-compatible ave_qual method.
+
+**Input file:**
+
+reads_ERR14838507.fastq.gz — Host-removed ONT long-read FASTQ file.
+
+**Output files:**
+
+- read_qual_ERR14838507.tsv — Metadata table containing read ID, read length, and average quality score.
+- read_qual_ERR14838507_summary.txt — Processing summary
+
+**Results:**
+
+- Total reads processed	- 6,309,145
+- Total bases -	31,892,219,489
+- Total sequencing yield - 31.89 Gb
+- Read filtering -	None
+- Downsampling -	Not performed
+
+The generated metadata provides the read IDs and lengths required for the next step, where reads are randomly selected to achieve a predefined target sequencing yield. Average quality scores are also retained for read-level quality assessment.
